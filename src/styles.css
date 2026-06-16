@@ -1,0 +1,190 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #1d1f26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f4f7fb;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar a {
+  color: #cbd5e1;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.content {
+  padding: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+}
+
+.card,
+.card-table,
+.cards {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
+}
+
+.card {
+  border-radius: 18px;
+}
+
+.card.small {
+  min-height: 160px;
+}
+
+.cards {
+  display: grid;
+  gap: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  color: #475569;
+  padding-bottom: 12px;
+}
+
+tbody tr {
+  border-top: 1px solid #e2e8f0;
+}
+
+tbody td {
+  padding: 14px 0;
+}
+
+.centered-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #eef2ff;
+  padding: 24px;
+}
+
+.form {
+  width: min(420px, 100%);
+  gap: 16px;
+  display: grid;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form input,
+.form select {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: white;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  background: #334155;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #475569;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.error {
+  background: #ffe4e6;
+  color: #9f1239;
+  border: 1px solid #fecdd3;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
